@@ -16,7 +16,7 @@ export const useFetch = (url) => {
         const res = await fetch(url);
 
         if (!res.ok) {
-          let err = new Error("Error en la petición");
+          let err = new Error("Error en la petición Fetch");
           err.status = res.status || "00";
           err.statusText = res.statusText || "Ocurrió un error";
           throw err;
@@ -34,7 +34,9 @@ export const useFetch = (url) => {
           setError(error);
         }
       } finally {
-        if (!signal.aborted) setLoading(false);
+        if (!signal.aborted) {
+          setLoading(false);
+        }
       }
     };
 
