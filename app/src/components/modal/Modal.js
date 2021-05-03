@@ -1,10 +1,16 @@
-import { Children } from "react";
 import "./Modal.css";
 
 const Modal = ({ children, isOpenModal, closeModal }) => {
+  const handleClick = (e) => {
+    e.stopPropagation();
+  };
+
   return (
-    <article className={`modal ${isOpenModal && "is-open"}`}>
-      <div className="modal-container">
+    <article
+      className={`modal ${isOpenModal && "is-open"}`}
+      onClick={closeModal}
+    >
+      <div className="modal-container" onClick={handleClick}>
         <button className="modal-close" onClick={closeModal}>
           X
         </button>

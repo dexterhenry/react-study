@@ -1,3 +1,5 @@
+.block-scroll {overflow:hidden;} 
+
 .modal {
   position: fixed;
   z-index: 999;
