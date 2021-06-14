@@ -28,12 +28,11 @@ const SelectList = ({ title, url, handleChange }) => {
       <label htmlFor={id}> {label}</label>
       {loading && <Loader />}
       <select name={id} id={id} onChange={handleChange}>
-        <option value="">Elige uno de los {title}</option>
+        <option value="">Seleccione uno de los {title}</option>
         {data &&
           options.map((el) => (
             <option value={el} key={el}>
-              {" "}
-              {el}
+               {el}
             </option>
           ))}
       </select>
