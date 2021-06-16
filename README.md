@@ -1,2 +1,2 @@
 # react-study
-this repository is from my react learning exercises
+this repository is from my react learning about React-router
