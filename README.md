@@ -1,2 +1,2 @@
-# react-study
-this repository is from my react learning exercises
+# react Test Dome
+this repository is from my react Test Dome solutions
