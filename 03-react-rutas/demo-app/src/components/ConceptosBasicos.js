@@ -34,7 +34,7 @@ export const ConceptosBasicos = () => {
             <Redirect to="/contacto" />
             <h3>Contact</h3>
           </Route>
-          <Route exact path="/react" component={ReactTopics} />
+          <Route path="/react" component={ReactTopics} />
           <Route path="*" component={Error404} />
         </Switch>
       </Router>

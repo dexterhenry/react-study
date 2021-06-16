@@ -1,4 +1,5 @@
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
+import Topic from "../components/Topic";
 
 const ReactTopics = () => {
   let match = useRouteMatch();
@@ -33,6 +34,7 @@ const ReactTopics = () => {
             sunt commodi dignissimos perspiciatis.
           </p>
         </Route>
+        <Route path={`${path}/:topic`} component={Topic} />
       </Switch>
     </div>
   );
